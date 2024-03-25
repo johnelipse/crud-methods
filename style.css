@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+header .mobile {
+  display: none;
+}
+header .desktop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+header .desktop a {
+  color: black;
+  font-size: 1rem;
+}
+header .desktop .middle {
+  display: flex;
+  gap: 1rem;
+}
+header .desktop .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: black;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  padding: 0.4rem 1rem;
+  font-size: 0.8rem;
+}
+header .desktop .btn:hover {
+  background: black;
+  color: white;
+}
+
+.signUpModal {
+  position: fixed;
+  top: 30%;
+  left: -100%;
+  width: 50%;
+  background: black;
+  color: white;
+  transition: all 0.8s ease;
+  display: flex;
+  padding: 1rem 2rem;
+  gap: 1rem;
+  flex-direction: column;
+}
+.signUpModal .form-field {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.signUpModal .form-field input {
+  padding: 0.4rem 1rem;
+}
+.signUpModal .buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.signUpModal .buttons button {
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: black;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  padding: 0.4rem 1rem;
+  font-size: 0.8rem;
+}
+.signUpModal .buttons button:hover {
+  background: white;
+  color: black;
+}
+
+.signUpModal-active {
+  left: 27%;
+}
+
+@media (max-width: 530px) {
+  header .mobile {
+    display: block;
+  }
+  header .mobile .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+  header .mobile .header .menubtn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.7rem;
+  }
+  header .mobile .popUpMenu {
+    position: fixed;
+    top: 0%;
+    left: -100%;
+    width: 90%;
+    height: 96%;
+    background-color: black;
+    transition: all 0.7s ease;
+  }
+  header .mobile .popUpMenu a {
+    font-size: 1.2rem;
+    color: white;
+  }
+  header .mobile .popUpMenu .menu-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+  header .mobile .popUpMenu .menu-header .closebtn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.7rem;
+  }
+  header .mobile .popUpMenu .menu-content {
+    display: flex;
+    padding: 1rem 2rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  header .mobile .popUpMenu-active {
+    left: 0%;
+  }
+  header .desktop {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

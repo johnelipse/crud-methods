@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <nav class="desktop">
+   <div class="logo"><a href="#">DesisHub</a></div>
+   <div class="middle">
+    <a href="#">Facebook</a>
+    <a href="#">Whatsup</a>
+    <a href="#">Twiter</a>
+    <a href="#">Instagram</a>
+   </div>
+   <div class="right">
+    <button id="signUpBtn" class="btn">Sign Up</button>
+   </div>
+    </nav>
+    <nav class="mobile">
+       <div class="header">
+       <button id="bringupMenu" class="menubtn"> <i class='bx bx-menu-alt-left'></i></button>
+        <a href="#">DesisHub</a>
+       </div>
+    <div class="popUpMenu">
+    <div class="menu-header">
+    <a href="#">DesisHub</a>
+    <button id="closeMenu" class="closebtn"> <i class='bx bx-x'></i></button>
+    </div>
+<div class="menu-content">
+    <a href="#">Facebook</a>
+    <a href="#">Whatsup</a>
+    <a href="#">Twiter</a>
+    <a href="#">Instagram</a>
+</div>
+    </div>
+    </nav>
+</header>
+<div class="signUpModal">
+    <form action="">
+    <div class="form-field">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="John Doe">
+    </div>
+    <div class="form-field">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="johndoe@gmail.com">
+    </div>
+    <div class="form-field">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="************">
+    </div>
+<div class="buttons">
+    <button id="submit" type="submit">Submit</button>
+    <button id="cancel">Cancel</button>
+</div>
+    </form>
+</div>
+ <script src="app.js"></script>   
+</body>
+</html>
